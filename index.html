@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Lancer" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.czGrid.js"></script>
+    <link href="http://local.im.crackedzone.com/resources/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="style/style.css"  />-->
+    <title>czCombobox Demo</title>
+    <style type="text/css">
+    .czGrid {font-size: 12px;}
+    .czGrid .czGrid-th-arrow {
+        position: absolute;
+        height: 32px;
+        width: 14px;
+        z-index: 900;
+        background: #FAFAFA url(images/fhbg.gif) repeat-x bottom;
+        border: 0 solid #CCC;
+        border-left: 1px solid #CCC;
+        top: 0;
+        left: 0;
+        margin-top: 1px;
+        cursor: pointer;
+        display: none;
+    }
+    .czGrid .czGrid-th-arrow div {
+        height: 32px;
+        width: 12px;
+        border-left: 1px solid white;
+        float: left;
+        background: url(images/ddn.png) no-repeat center;
+    }
+    .czGrid .czGrid-th-wrap {
+        background: #FAFAFA url(images/fhbg.gif) repeat-x bottom;
+        position: relative;
+        border: 1px solid #CCC;
+        border-bottom: 0;
+        overflow: hidden;
+    }
+    .czGrid .czGrid-th-wrap table{
+        border-right: 1px solid white;
+    }
+    .czGrid .czGrid-th-wrap th,
+    .czGrid .czGrid-td-wrap td {
+        font-weight: 400;
+        height: 24px;
+        cursor: default;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: left;
+        border-right: 1px solid #DDD;
+        border-left: 1px solid white;
+        overflow: hidden;
+        vertical-align: top!important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .czGrid .czGrid-th-wrap th div,
+    .czGrid .czGrid-td-wrap td div {
+        padding: 5px;
+    }
+    .czGrid .czGrid-td-wrap {
+        border: 1px solid #CCC;
+        border-top: 0;
+        height: 200px; 
+        background: white;
+        overflow: auto;
+        position: relative;
+    }
+    .czGrid .czGrid-tr-odd td{
+        border-bottom: 1px solid white;
+    }
+    .czGrid .czGrid-tr-even td{
+        background: #F7F7F7;
+        border-left: 1px solid #F7F7F7;
+        border-bottom: 1px solid #F7F7F7;
+    }
+    .czGrid .czGrid-td-wrap tr:hover td{
+        background: #D9EBF5;
+        border-left: 1px dotted #A8D8EB;
+        border-bottom: 1px dotted #A8D8EB;
+    }
+    </style>
+</head>
+
+<body>
+<div class="container">
+<div class="page-header">
+    <h3>Demo : My Table</h3>
+</div>
+<table id="cz">
+    <thead>
+        <tr>
+            <th width="100">Col 1</th>
+            <th width="100">Col 2</th>
+            <th width="100">Col 3 is a long header name</th>
+            <th width="300">Col 4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>This is data 1 with overflowing content</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+        <tr>
+            <td>This is data 1</td>
+            <td>This is data 2</td>
+            <td>This is data 3</td>
+            <td>This is data 4</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<script type="text/javascript">
+    $("#cz").czGrid();
+</script>
+</body>
+</html>
